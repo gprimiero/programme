@@ -1,0 +1,206 @@
+\documentclass[11pt]{article}
+
+%% Package calls:
+  \usepackage{harvard}
+  \usepackage{eufrak}
+  \usepackage{mathrsfs}
+  \usepackage{mathtools}
+%%  \usepackage{hyperref}
+
+
+\begin{document}
+
+
+  \title{\textbf{Serious Verification as\\
+                 the Unifier of Logicist Programming}}
+  \author{RT $\leftrightarrow$? SB $\bullet$ GP $\bullet$ ED $\bullet$ J-BJ?}
+  \date{\texttt{rough non-detechnicalized version 0911191139NY}}
+  \maketitle
+
+
+  \begin{abstract}
+    \noindent
+%
+      After distinguishing between two fundamentally different
+      conceptions of logicist (computer) programs and programming (the
+      declarative vs.\ the constructivist traditions), we consider the
+      challenge of what we call `serious' program verification, and
+      find that it catalyzes the unification of these standardly
+      competing conceptions.  The unification can be viewed as
+      offering to others an integrated logicist paradigm, cast at a
+      philosophical level, for subsequently achieveing high-assurance
+      computer programming.
+  \end{abstract}
+
+\thispagestyle{empty}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\thispagestyle{empty}
+
+  \begin{small}
+    \tableofcontents
+  \end{small}
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \newpage
+  \pagenumbering{arabic}
+
+
+
+  \section{Introduction}
+  \label{sect:intro}
+ 
+    After distinguishing between two fundamentally different
+    conceptions of logicist (computer) programs and programming (the
+    \textbf{declarative} vs.\ the \textbf{constructivist} traditions),
+    we consider the challenge of what we call `serious' program
+    verification, and find that it catalyzes the unification of these
+    ordinarily competing conceptions.  The unification can be viewed
+    as offering to others an integrated logicist paradigm, cast at the
+    philosophical level, for subsequently achieveing high-assurance
+    computer programming.
+
+    The plan for the paper is as follows.  We begin (\S
+    \ref{sect:basic_declarative}) with a synopsis of basic declarative
+    programming, including a few remarks about its historical roots
+    and current real-world practice.  Next (\S
+    \ref{sect:ver_challenge_dec}), we consider an approach to program
+    verification on the declarative approach, and find that initial
+    sanguinity regarding this approach melts away to reveal that what
+    can be called `serious' verification is outside the reach of this
+    approach.  The upshot is a turning to the constructivist approach
+    for rescue; section \ref{sect:basic_constructivist} sets out in
+    broad terms this approach, and then section \ref{sect:rescue}
+    explains the rescue itself.  A brief concluding section wraps up
+    the paper, and includes some remarks regarding the future of the
+    unified approach we have introduced.
+
+
+
+  \section{Basic Declarative Logicist Programming}
+  \label{sect:basic_declarative}
+
+  \noindent
+%
+  Let $\Phi$ be a set of wffs constructed in accordance with a formal
+  grammar of an extensional logic $\mathscr{L}$ sufficiently less
+  expressive than first-order logic $\mathscr{L}_1$ to avoid the
+  \textit{Entscheidungsproblem}.\footnote{E.g.\ $\mathscr{L}$,
+    formula-wise, can be restricted to those having at most two
+    distinct variables, and allowing identity.  Such a logic is
+    decidable (as shown by Scott, who built on G\"{o}del's
+    completeness theorem, and --- for the allowance of identiy ---
+    Mortimer after Scott), and dodges Church's Theorem.} We say that
+  $\Phi$ is a \textbf{logic program}.  Our logic $\mathscr{L}$
+  includes some collection $\mathcal{I}^\ast_\mathscr{L}$ of inference
+  schemata for deduction that gives the proof theory of this logic,
+  and when some formula $\phi$ is deducible from $\Phi$ in this theory
+  we --- following standard notation --- write
+  $$\Phi\ \vdash_{\mathcal{I}^\ast_\mathscr{L}}^Y \phi.$$
+%
+  If instead of `Y' in this statement there is an `N,' then what is
+  being said is that deducibility fails to hold.  When the provability
+  relation symbol is superscripted as in
+  $$\Phi\ \vdash_{\mathcal{I}^\ast_\mathscr{L}}^\pi \phi,$$
+%
+  what is being said is that particular proof $\pi$ goes from $\Phi$
+  to $\phi$ in the relevant proof theory.  To say that it's a question
+  and at present unknown as to whether there exists a proof from
+  $\Phi$ to $\phi$ by the inference schemata in question, we write
+  $$\Phi\ \vdash^?_{\mathcal{I}^\ast_\mathscr{L}}\ \phi.$$
+%
+
+  We have said that $\Phi$ is a program.  Surely that will seem to
+  most to be rather odd.  After all, this means that a mere collection
+  of formulae is counted as a program, and such a collection seems
+  rather static.  How does something happen?  After all, surely the
+  point of a program is to set matters up so that something meaningful
+  can happen under the governance of said program.  In the present
+  context, things begin to happen when, first, we issue a query
+  $\mathfrak{q}$ against the program $\Phi$.  For example, set
+  $\Phi'\ \coloneqq \{p \rightarrow q, q \rightarrow r, \neg r\}$, and
+  consider a query as to whether from $\Phi'$ is can be proved that
+  $\neg p$.  The query is given to a reasoner $\mathcal{R}$, and in
+  this case, of course, the answer given back will be a Yes,
+  accompanied by a simple proof that we shall label $\pi'$; this proof
+  might for instance first use hypothetical syllogism to obtain $p
+  \rightarrow r$, and from this and given $\neg r$ by \textit{modus
+    tollens} deduce $\neg p$.  In the notation introduced above, we
+  have the following query in the example now before us:
+  $$\mathfrak{q} \coloneqq \Phi'\ \vdash^?_{\mathcal{I}^\ast_\mathscr{L}}\ \neg p$$
+%
+  And we have have the following returned by automated reasoner $\mathcal{R}$:
+$$\Phi'\ \vdash^{\pi'}_{\mathcal{I}^\ast_\mathscr{L}}\ \neg p.$$
+
+  For more in the direction sketched above, see
+  \cite{comp_sci_immaterial_formal_logic}.
+
+
+  \section{The Verification Challenge to the Declarative Approach}
+  \label{sect:ver_challenge_dec}
+
+    Now, how do we carry out verification of the program and of the
+    result of the reasoner taking it and producing its output?  The
+    immediate and sanguine response to this question is that we have
+    only to verify that the returned $\pi$ is a valid proof, all the
+    way through, that its starting givens match $\Phi$, and that its
+    ultimate conclusion matches $\phi$.  This can be accomplished by a
+    dirt-simple automated proof checker $\mathcal{C}$.\footnote{Note
+      that while in our example the proof $\pi'$ can be checked by
+      hand, nearly all proofs will be too long to be manually checked,
+      and programs will be executed repeatedly through time for any
+      real-world applications, which puts manual checking further out
+      of the realm of feasibility.}
+
+    But this is absolutely \emph{not} a meeting of the challenge of
+    \emph{serious} program verification.  In serious program
+    verification all elements of the overall process of computing must
+    be scrutinized, top to bottom.  From this perspective, what is
+    left out?  What gets a free pass?  The answer is obvious: the
+    checker has been ignored.  Why should we trust $\mathcal{C}$?  By
+    definition, it is outside the paradigm that has been set out!
+
+
+
+  \section{Basic Constructivist Logicist Programming}
+  \label{sect:basic_constructivist}
+
+
+
+  \section{Constructivists to the Rescue}
+  \label{sect:rescue}
+
+
+
+  \section{Conclusion}
+  \label{sect:conclusion}
+
+
+
+  \section{Acknowledgements}
+  \label{sect:ack}
+ 
+  This paper was is an outcome of the ANR PROGRAMme project
+  (ANR-17-CE38-0003-01), specifically of interaction at the Bertinoro
+  2018 meeting.
+
+  
+
+  \bibliographystyle{agsm}
+  \begin{small}
+    \bibliography{main72}
+  \end{small}
+
+
+\end{document}
+

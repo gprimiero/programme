@@ -1,0 +1,8 @@
+What is a (logic) program
+
+
+One problem that has always related logic and programming is that of design. How can a given computational system be realised in a way that certain properties (e.g. correctness, security, safety, explainability etc) are respected? Such process requires the formulation of a model of the program, against which to compare its implementation. The process of design thus require the construction of the model or blueprint, an essentially logical task given the LoA at which we are working. 
+
+Note: the evaluation of the model is essentially given by its implementation, rather than the other way around.
+
+
