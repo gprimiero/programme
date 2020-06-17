@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.4.24)  17 JUN 2020 08:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.4.24)  17 JUN 2020 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -100,30 +100,30 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 12.
 
 [2] [3]
-Overfull \hbox (4.00067pt too wide) in paragraph at lines 94--104
+Overfull \hbox (4.00067pt too wide) in paragraph at lines 93--103
 []\OT1/cmr/m/n/10 Early ef-forts to for-mal-ize the mean-ing of pro-grams em-pl
 oyed the computation-
  []
 
 
-LaTeX Warning: Citation `turner2018' on page 4 undefined on input line 116.
+LaTeX Warning: Citation `turner2018' on page 4 undefined on input line 115.
 
 [4]
-Overfull \hbox (7.26631pt too wide) in paragraph at lines 132--132
+Overfull \hbox (7.26631pt too wide) in paragraph at lines 131--131
 []\OT1/cmr/bx/n/14.4 Representative Democ-racy: Model, Im-ple-men-
  []
 
 [5]
-Overfull \hbox (12.66464pt too wide) in paragraph at lines 185--185
+Overfull \hbox (12.66464pt too wide) in paragraph at lines 184--184
 []\OT1/cmr/bx/n/14.4 The Par-ties: Declar-a-tivists and Con-struc-tivists. 
  []
 
 [6] [7]
 
-LaTeX Warning: Citation `??' on page 8 undefined on input line 259.
+LaTeX Warning: Citation `??' on page 8 undefined on input line 258.
 
 
-LaTeX Warning: Citation `forman' on page 8 undefined on input line 282.
+LaTeX Warning: Citation `forman' on page 8 undefined on input line 281.
 
 [8] (./logic_v1.aux)
 
