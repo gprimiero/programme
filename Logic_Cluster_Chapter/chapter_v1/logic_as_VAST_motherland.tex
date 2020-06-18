@@ -1,0 +1,69 @@
+\documentclass{article}
+
+%% Make these package calls in any driver file or sub-file commands.tex:
+\usepackage{harvard}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{fancybox}
+
+\begin{document}
+
+
+
+\section{The Motherland is Vast; The Colony, Hitherto, Tiny}
+\label{sect:motherlandvast_colonytiny}
+
+\noindent
+%
+Once Logic is taken to be the Motherland, and programs as most humans
+have so far created and used them taken to be a Colony, say
+$C_\textsc{<h}$, an immediate moral from the metaphor is that the
+Motherland is breathtakingly larger and richer than what has been seen
+in $C_\textsc{<h}$.  Put another way, the colony $C_\textsc{<h}$ is
+tiny; but the Motherland is vast, with glorious riches and raw
+materials entirely absent from, and not even faintly reflected by
+anything in, $C_\textsc{<h}$.  What has been introduced as Pure
+General Logic Programming (PGLP) \cite{introduction_of_PGLP} makes
+this clear; the tiny-vs.-vast moral also follows from the view,
+defended in \cite{comp_sci_immaterial_formal_logic}, that past and
+present programming, and indeed computer science overall, is a small
+fragment of formal logic.
+
+These are abstract concepts, yet even simple examples can be used to
+reveal the moral brought to the reader's attention in the present
+section.  For example, where the background formal language is an
+infinitary one for the standard propositional calculus that permits
+countably infinite disjunctions and conjunctions\footnote{The formal
+  language here is the propositional fragment of that for the
+  well-behaved infinitary logic $\mathscr{L}_{\omega_1 \omega}$,
+  economically covered in \cite{ebb.flum.thomas.2nded}.}, here is a
+two-line program $\mathbb{P}_1$ in PGLP from the Motherland, hereby
+brought to $C_\textsc{<h}$:
+
+\medskip
+$$
+\begin{array}{l|l}
+ 1 &  \phi_1 \vee \phi_2 \vee \phi_3 \ldots\\
+  2 & \neg \phi_2 \wedge \neg \phi_3 \wedge \neg \phi_4 \ldots 
+\end{array}
+$$
+\medskip
+                    
+\noindent
+%
+The query ``$\phi_1$?'' against $\mathbb{P}_1$ then results in an
+affirmative answer, and the proof makes use of an infinitary analogue
+of \textit{disjunctive syllogism} or \textit{unit resolution}.
+
+
+
+
+
+
+
+
+
+\bibliographystyle{agsm}
+\bibliography{main72}
+
+\end{document}
