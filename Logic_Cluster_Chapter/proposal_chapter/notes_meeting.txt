@@ -1,0 +1,108 @@
+Logic and programs: a declaration of (in)dependence
+
+Main document:
+Below, you can add questions, suggestion, quotes and comments that you have during the session (and after). 
+
+Document for this session:
+Here is a link to the document prepared for this session: 
+
+https://www.dropbox.com/s/nnjy8t4nvfr1htk3/logic_v1.pdf?dl=0
+
+Sources:
+If you have suggested sources (literature, wbesites, people etc) please link them here and not in the chat. If you want to share a document, please upload to the wiki and link here, or directly link, simply by copying the URL.
+
+https://github.com/gprimiero/programme
+
+Wiki link for this session:
+https://wiki.program-me.org/index.php?title=Logic
+
+Back to Main Session:
+https://etherpad.musikinformatik.net/p/PROGRAMme_Welcome
+
+
+Notes from the current session:
+    The current draft is a slightly changed document. My suggestion was to collect the different positions in this group around the relation between logic an dprograms without imposing anyones view. This chapter should not becessarily try to convey to one position but offer a variety of views. I tried to achieve this with a narrative that is structured around the relation between logic as the motherland and programs as colonies. And the idea was to make it a problematic one. Is that the relation we want to posit? Is it true that logic rules or rather whetehr at some point programs require an independent status. 
+    What I did in the last weeks was trying to build upon that and to reread the notes that several people had sent and see how they could fit in. 
+    The inution is as follows: in sec. 2 I present three different waysin which logic could offer a constitutive way of programs to be. The first one is dominion: the understanding of the relationship as full control (normative). In other words, logic tells what programs should do but also what they are. I take here a bit form Nicola which has to do with the possibility of understanding logic as the common underlying structure for the different ways in which programs can be. I think that the intuition that proofs are programs could fit there.  
+    A second way of that is what i called federation (inspired by Dale). This is an intermediate position. It considers a common structure but considering still different ways of programs to be.
+    The third one is inspired by Nicola and this is independence. Here Nicola is making a refernece to Ray's passage. Here Nicola's note makes reference to different ontological ways in which programs can be defined according to different linguistic expresions. Here the order of thing is reversed. It is at the other extreme of dominion. 
+    Section 3 looks at the dependence that programs have from logic. this is related to the result of what attitude one his wrt the institutional approach. Here is Nick's note asking from a more metaphysica viewpoint of the dependence of two objects. Is y necessary for x and vice versa. Here there is a relation between model and implementation. I call this representative democracy: the import that real-world has to bring back to the model and the constitution. 
+   Here again there are several options. The pragmatist: the ontology of a program is determined by what the people tell each other what the program should do. And this is really anyone not just the developer. Here, logic is just an accessory to organize the linguistic interaction between people. 
+   SIMONE: What logic are you talking about?
+   GIUSEPPE: I think of logic in terms of formalisms that sets constraints in terms of correctness and consistency but I do not want to engage with one speciifc logic (eg classical logic, intuitionistic logic, etc). 
+   SIMONE: I think that logic means different things in the whole text and that might make it difficult to read. 
+   GIUSEPPE: your remark is very appropriate and I realize that is highly probable. I mean that makes for a difficult choice. If we are writing a chpater on th relation between logic and programs, i do not think this is just about Curry-Howard or something else.
+   SIMONE: it was a comment on the internal structure. I do not know if the notion of logic is used in a consistent way here.
+   GIUSEPPE: I think one important step here will be to pinpoint in those different points in the chapter, waht is the correct reference to a speciifc logical approach. That will be an important task and it will have to be done systematically. 
+   GIUSEPPE: Picking up on thta note, once we enter the aspect in which the ontology of programs is related to a notion of model (or eventually not) then necessarily enters the different semantics one might have to take into account. Here I call them the parties. Here is the place to make a more consistent distinction between logic programming and the constructivist position. 
+   GIUSEPPE: Here, less and less clear. The role should also set-up regulations and here inmy mind comes the possibility of the role of logic to regulate the behavior of programs. This can be about types and Tomas and wendy could contribute here. It is probably true that this chapter lends itself in a more friendly way for her research. 
+   Then I have the linguistic variants and calls back the passage from Ray. In a way, sec. 2 can be a forward reference to varous other sections coming in. And then there are 7, 8 and 9 and here I am going to more and more losing up the relation between logic and programs. For instance in Sec. 7 is about how different implemtnations make different logical structures; what the role of verification is (logic tells you whther the program is correct but the program is a living thing); chapter 8: two passages from Liesbeth and Edgar. Liesbeth had a passage on pathology and Edgar had a nicepassage on the Kopetz principle. 
+   
+   Chapter  9 calls everything into question. 
+   
+   Essentially now my question is: do you see your bits and pieces. Do you see other bits and pieces. And how do you want to proceed. 
+   
+   RAY: one thing that is missing is about domain theory and logical form (The paper is Abramsky, S., Domain theory in logical form, Annals of Pure and Applied Logic 51 (1991) 1–77., 
+https://www.sciencedirect.com/science/article/pii/016800729190065T) which kind of unifies the main theories. You cannot put the technicl details of that in but it provides a huge fraework to think about the relation between logic and programs. 
+   
+   GIUSEPPE: In sec. 2.1. the reference is to two main traditions (denotational and constructuve). Is that fit?
+   RAY: I have to think more about that. 
+   
+   MARIE-JO: the eference to colonies and dominion makes me thnk of a paper by De Morgan where he uses the same metaphor. He says that before dominion there were explorers and adventurous and only afterwards there was dominion. You begin with dominion. I wonder if there is a place for exploreres before there was a fixed relation and I am not sure logic was first. There was a situation rather where they were comparing (Augustus de MorganA Treatise on the Calculus of functions, extracted from the Encyclopaedia Metropolitana, London, 1836.) 
+   GIUSEPPE: Of course you are right and I have not though about that. If you think in those terms it means by defintion there is someone independent before the dominion. What was before independent becomes part of the epire.
+   MARIE-JO: it was not his point. His point was that first there was first an experiemtnation way to use notations for functions. The idea was to cnstruct something from an empirical practice. 
+   GIUSEPPE: When I talk of the empire and the colonies I should also consider what existed before and it is a perfect comment. I did not think of that. I come from the empire. i work myself out of this strategy of conquest but yes. Maybe this is a good reference. 
+   LIESBETH: I can perhaps pick up on that and develop it historically.
+   NICK: In sec. 3 you have all the subsections and perhaps it would be nice to add some of the material related to Nicola's chapter on "Are computer porgrams theories?"
+   GISUEPPE: Part of sec. 3 necessarily come back into that chapter indeed. Certainly there are ocnnections there (and to other chapters). 
+   JULIAN: if the basic idea somehow is that it is what allows you to tell correctness and consistency there are a lot of connections ot the systems chapter and that is very good. What I could add if you want is a short thing about computational citizenship and if you are in these polticial metaphors and take it beyond the metaphorical stage, then I could help. 
+   GIUSEPPE: I am not sure it is more than a metaphor and am unsure if i can ground it with a concrete reference. it is rather a helpful way to represent these very complex relations. If someone is not convinced, I am not strongly attached to this. And yes, if oyu think there is anything that fits from that point of view, obviously it is very welcome.
+   JULIAN: I do not think they need to be treated per se in depth but we should be sure we use the terms correctly. 
+   GIUSEPPE: a good exercise on my side would be to add a short defintition of each of these terms if we stick to this. 
+   JULIAN: it would be cool to have one classic literature where each has discussed it.
+   GIUSEPPE: I have a long one page note and I think that fitted inmany ways but have not ound the time yet to see how it could fit. His note is on Curry-Howard and the way in which different logic can induce different types of programming styles. He had a series of point starting wth lambda and fcuntional programming and then extensions up to mu-calculus. My question to Alberto whether he sees his contribution perhaps fitting to the Curry-Howard part. 
+   ALBERTO: I think I sent it a long time ago and perhaps there was also a part on Curry-HOward and classical logic. you said before thta you mved C-H to the constructivist section but perhaps it could also stay with some other kinds of logic. 
+   GIUSEPPE: I think my position with respect to this is that we need to make something emerge and my way of proceeding would be: trying to see as much individual content as possible. I see it as my task to connect the different pieces. Trying to consistently put htme together. I want to see this picture emerging. There is alse one thing in your notes that was related to pathological programs (sec. 8.1.) -- if you would have somethin there, that would be great. 
+   ALBERTO: I think that in general this is a question I wanted to ask: which kind of pathology you were thinking of? Liesbeth's refers to errors; Alberto's refers to another kind of pathological programs -- eg looping programs.
+   I think, yes, the part on pathology and correctness is one of the most interesting
+   GIUSEPPE: srtting up a difference between two kinds of pathologies -- loop and error -- and use in whatever logical means, i find it intersting to analyze that form of pathology. 
+   LIESBETH: How will we proceed?
+   GIUSEPPE: for those who can use GITHUB use that. The secon part s trying to connect the different parts. For those who do not want to use GIT, it is fine but let us try to find another way. My suggestion is to identify parts they are intersted in and then start to work on that. 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   Simone: I think Section 4 and Section 2.2 have significant overlap
+   
+   
+   
+   
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
