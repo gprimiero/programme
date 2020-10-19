@@ -30,23 +30,13 @@ In this chapter we explore and formulate the problems and the opportunities of c
 
 \section{Constitution: Logic as Specification.}
 
-In a first sense, Logic is the Motherland to its colonies, the Programs. Logic intended as the Specification which fixes the behaviour of the Program. This relation answers to the question: what status does the Empire conceeds to the Colony? Or: what is a computer program from a logical point of view?
+In a first conceptual sense, Logic is the Motherland to its colonies, the Programs. Logic is in this way intended as the specification which fixes the behaviour of the Program. Under this reading, the relation between logic and programs is one of magnanimity of the former towards the latter ones: which status does the Empire concedes to its colonies? Or else: what can a computer program be, when intended from a logical point of view?
 
-A possible answer to this question is that of formulating a general regulation, independently of the specifics of the colonies, the language they speak. In this sense, high-level programs can be expressed in many languages and, especially, they can be formulated through different programming language paradigms. Also, the answer will be independent of the material regulations of the colonies, the means they use for production: low-level programs can be expressed in assembly language or in machine-code language, and also in this case the general regulation will have to be formulated independently of such specifics. But what should such a regulation look like, and what ontological constraints shuold it impose? How will the distinct linguistic dialects (paradigms and high-level langaugues) and the local production means (low-level langauges and architecture-dependent machine code) affect the generality of the regulation?
+Answering this question means formulating a general regulation dictated by the specifics of the chosen logic, independently of the implementation details within  the colonies, i.e. the language they speak, or the material conditions (hardware) in which they live. In this sense, high-level programs can be expressed in many languages and, especially, they can be formulated through different programming language paradigms, but these are accidental properties irrelevant to the correct execution of the law. Also, the latter will be independent of the material regulations of the colonies, their means of production: low-level programs can be expressed in assembly language or in machine-code language; and they can be compiled for a given processor, or another; but also in this case the general regulation will hold independently of such specifics, and the behaviour of programs will be evaluated for correctness against such regulation.
 
-
-{\color{red}{Ray (links down to Magna Carta)}}
-
-
-Kowalski at a special meeting of the Royal Society in London emphasises
-the relationship between logic programs and specifications. He observe that
-the only difference between a complete specification and a program is one of
-efficiency.
+But what should such a regulation look like, and what ontological constraints should impose? How will the distinct linguistic dialects (paradigms and high-level langaugues) and the local production means (low-level langauges and architecture-dependent machine code) affect the generality of the regulation?
 
 
--- complexity and evaluation as criteria distinguish specification and implementation
-
--- other level: physical execution
 
 
 \subsection{Dominion}
@@ -54,8 +44,7 @@ efficiency.
 
 {\color{red}{this passage is inspired by Nicola's note}}
 
-According to a first understanding of this problem, given distinct formulations of a program into different programming language paradigms, and distinct compilations into different machine-code languages, the operational nature of the Colony and its relation with the Motherland should remain invariant: the program \textit{is} the same.  Then one way to grasp the logical structure underneath those diverse program formulations (the unique relationship with the Motherland, as established by the Regulation) is to consider the common rule of law that the Emperor has imposed for any Colony: the abstract machine implemented by any program. A C program, a Java program, a Prolog program, are all distinct linguistic formulations, with distinct ontological commitments, of the "same program".
-
+Hence, given distinct formulations of a program into different programming language paradigms, and distinct compilations into different machine-code languages, the operational nature of the Colony and its relation with the Motherland remains invariant: the program \textit{is} the same.  Then one way to grasp the logical structure underneath those diverse program formulations (the unique relationship with the Motherland, as established by the Regulation) is to consider the common rule of law that the Emperor has imposed for any Colony: the abstract machine implemented by any program. A C program, a Java program, a Prolog program, are all distinct linguistic formulations, with distinct ontological commitments, of the "same program".
 
 In the tradition, two formulations of this policy have been given:
 
@@ -74,6 +63,20 @@ The former [...]
 
 The latter can be expressed as the set of operations specified by the underlying abstract machine. A program is logically equivalent to the set of
 operations it instructs. Imperative, procedural, and object oriented programs make explicit reference to the machine states and operations on those states; logical and functional programming languages leave this duty to the compiler or interpreter.  According to this view, a program can be logically defined as the equivalent class of implementations, expressed using different programming languages, of the same abstract machine. An abstract machine specifies the states of the system to be  implemented , its executions, variables, data types, data structures, algorithms, independently of any chosen programming language. The present view on the nature of programs also accounts for low-level programs: assembly language and machine code programs belong to the equivalence class of programs implementing a given abstract machine. Indeed, both assembly language and machine code programs inherit the abstract machine implemented by some high-level language program.
+
+
+{\color{red}{Ray (links down to Magna Carta)}}
+
+
+Kowalski at a special meeting of the Royal Society in London emphasises
+the relationship between logic programs and specifications. He observe that
+the only difference between a complete specification and a program is one of
+efficiency.
+
+
+-- complexity and evaluation as criteria distinguish specification and implementation
+
+-- other level: physical execution
 
 
 \subsection{The Motherland is Vast; The Colony, Hitherto, Tiny}
