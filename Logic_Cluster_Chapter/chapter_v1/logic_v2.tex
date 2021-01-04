@@ -68,7 +68,17 @@ In the tradition, two formulations of this policy have been given:
 {\color{red}{this passage is inspired by Jean-Baptiste's note}}
 
 
-The former [...]
+The Curry-Howard isomorphism states the possibility of regarding formal proofs (of certain kinds) as programs (of certain kinds).
+
+The historical origins of the Curry-Howard isomorphism -- or perhaps better, \emph{correspondence} -- lie in the observation, made by Curry in the early 1930s, that the formal proofs of a very simple system of propositional logic (specifically, the implicative fragment of the intuitionistic propositional calculus) can be named by combinators. Curry considered Hilbert systems, where there are axioms and the only inference rule is modus ponens. In this context axioms are named by primitive combinators and modus ponens corresponds, on the combinators side, to application. For example, the proof of $p \to (q \to p)$ is named by the combinator $\textbf{\textsf{K}}$. The combinator $\textbf{\textsf{S}}\textbf{\textsf{K}}\textbf{\textsf{K}}$, which is the definition of the identity combinator
+$\textbf{\textsf{I}}$, is the name of a proof of the proposition $p \to p$ in the corresponding Hilbert-style propositional system.
+
+Observe that the type of a combinator in Curry's system is just a transcription of the proposition whose proof is named by the combinator,
+this is why the correspondence is also called ``types as propositions''.
+
+The correspondence fits nicely the meaning explanation of constructive logical propositions given by Heyting in the 1930s, according to which the proof of a proposition A is the fulfillment of the intention expressed by A or, to use the interpretation of Kolmogorov, the proof solves the problem expressed by A.
+
+From the general point of view that concerns us here, this correspondence allows to draw a parallel between logic (the level of types as propositions) and programming (the level of programs as proofs). The correspondence has been extended to larger constructive formal systems with the contributions of several authors working around the end of the 1960s, and in order to be historically accurate one should dub it the ``Curry-de Bruijn-Lauchli-Lawvere-Scott-Howard correspondence''. The idea has found a systematic realization in the systems of intuitionistic type theory of Per Martin-L\"of, which can be regarded both as a program logic and as a programming language.
 
 The latter can be expressed as the set of operations specified by the underlying abstract machine. A program is logically equivalent to the set of
 operations it instructs. Imperative, procedural, and object oriented programs make explicit reference to the machine states and operations on those states; logical and functional programming languages leave this duty to the compiler or interpreter.  According to this view, a program can be logically defined as the equivalent class of implementations, expressed using different programming languages, of the same abstract machine. An abstract machine specifies the states of the system to be  implemented , its executions, variables, data types, data structures, algorithms, independently of any chosen programming language. The present view on the nature of programs also accounts for low-level programs: assembly language and machine code programs belong to the equivalence class of programs implementing a given abstract machine. Indeed, both assembly language and machine code programs inherit the abstract machine implemented by some high-level language program.
